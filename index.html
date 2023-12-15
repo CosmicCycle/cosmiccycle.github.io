@@ -1,52 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<style>
-	body {
-	    background-color: darkgray;
+
+	<style>
+		.page-header {
+		    text-align: center;
+		    border-style: solid;
+		    background: black;
+		    color: white;
 		}
 
-</style>
+
+		.profile-image {
+		    padding-top: 10px;
+		    float: left;
+		    width: 260px;
+		}
+
+		.portfolio-header2 {
+		    text-align: center;
+		    border-style: solid;
+		    background: black;
+		    color: white;
+		}
+
+		.activity {
+		    display: inline-grid;
+		}
+
+		.person-name {
+			font-family: century gothic;
+		}
+
+		.about-about.me {
+		    text-align: center;
+		}
+
+		.information-description {
+			display: flow-root;
+		}
+
+		.activity-wrap {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.activity-wrap .activity{
+			width: 20%;
+		}
+
+		.activity .activity-content{
+			height: 60px;
+		}
+
+		.btn {
+			display: block;
+			padding: 10px;
+		}
+
+		.btn-dark {
+			background: #000;
+			color: #fff;
+		}
+
+	</style>
+</head>
 
 <body>
-	<h2>GITHUB-About Me Page</h2>
-	<img src="./img/Profile.jpg">
-	<h3>About Me</h3>
-	<hr>
-	<p>I am a  student and I am taking BSIT Course. I have learned programming language like:</p>
-		<ul>
-		  <li>Java</li>
-		  <li>Python</li>
-		  <li>Javacsript</li>
-		</ul>
+	<div class="container">
+		<div class="page">
+			<div class="page-header">
+				<h2>GITHUB-About Me Page</h2>
+			</div>
+			<div class="profile-image">
+				<img src="./img/Profile.jpg">
+				<div class="person-name">
+					<h3>Renz Bautista</h3>
+				</div>
+			</div>
 
-	<p>Likes: Reading Manga, Mobile/Computer games, cars, anime</p>
-	<hr>
+			<div class="about-about me">
+				<h3>About Me</h3>
+			</div>
+				<hr>
+			<div class="information-description">
+				<p>I am a  student and I am taking BSIT Course. I have learned programming language like:</p>
+					<ul>
+						 <li>Java</li>
+						 <li>Python</li>
+						 <li>Javacsript</li>
+					</ul>
+				<p>Likes: Reading Manga, Mobile/Computer games, cars, anime</p>
+				<hr>
+				<p>"In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them."</p>
+				<p>- Andrew Hunt</p>
+			</div>
 
-	<p>"In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them."</p>
-	<p>- Andrew Hunt</p>
-</body>
-<body>
-	<h2>PROGRAMMING_PORTFOLIO</h2>
-	<p>Activity 1</p>
-	<p>Bootstrap + JQuery Midterm Exam</p>
-	<button type="button" class="btn btn-dark">Visit Project</button>
+			<div class="programming-portfolio">
+				<div class="portfolio-header2">
+                <h2>PROGRAMMING PORTFOLIO</h2>
+            </div>
+            	<div class="activity-wrap">
+	                <div class="activity">
+	                    <p class="activity-title">Activity 1</p>
+	                    <p class="activity-content">Bootstrap + JQuery Midterm Exam</p>
+	                    <button type="button" class="btn btn-dark">Visit Project</button>
+	                </div>
 
-	<p>Activity 2</p>
-	<p>Bootstrap + JQuery Progress Bars</p> 
-	<p>with buttons and event handlers</p>
-	<button type="button" class="btn btn-dark">Visit Project</button>
+	                <div class="activity">
+	                    <p class="activity-title">Activity 2</p>
+	                    <p class="activity-content">Bootstrap + JQuery Progress Bars with buttons and event handlers</p>
+	                    <button type="button" class="btn btn-dark">Visit Project</button>
+	                </div>
 
-	<p>Activity 3</p>
-	<p>Bootstrap + JQuery Registration Form</p>
-	<button type="button" class="btn btn-dark">Visit Project</button>
+	                <div class="activity">
+	                    <p class="activity-title">Activity 3</p>
+	                    <p class="activity-content">Bootstrap + JQuery Registration Form</p>
+	                    <button type="button" class="btn btn-dark">Visit Project</button>
+	                </div>
 
-	<p>Activity 4-Table Rows and Columns</p>
-	<p>Details</p>
-	<button type="button" class="btn btn-dark">Visit Project</button>
-
+	                <div class="activity">
+	                    <p class="activity-title">Activity 4-Table Rows and Columns</p>
+	                    <p class="activity-content">Details</p>
+	                    <button type="button" class="btn btn-dark">Visit Project</button>
+	                </div>
+            	</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
